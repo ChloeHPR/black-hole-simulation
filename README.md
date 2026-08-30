@@ -4,8 +4,7 @@ A lightweight, fully vectorized Python simulation of a black hole's accretion di
 
 This project models the visual distortions caused by the extreme gravitational pull of a black hole, including gravitational lensing and relativistic Doppler beaming, strictly using standard scientific libraries.
 
-![Black Hole Simulation Output](placeholder_for_your_image.png)
-*(Note: Replace this placeholder with a screenshot of your matplotlib output)*
+![Black Hole Simulation Output](black-hole-visu.png)
 
 ## Features
 
@@ -20,6 +19,7 @@ The project relies on standard scientific Python packages:
 
 ```bash
 pip install numpy matplotlib
+```
 
 Usage
 Simply run the main script. The BlackHoleRenderer class is pre-configured with solar mass equivalents and optimal viewing angles.
