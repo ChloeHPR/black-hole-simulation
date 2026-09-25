@@ -43,14 +43,15 @@ image_data = renderer.render()
 show_image(image_data, extent_limit=renderer.screen_size)
 
 
-How it Works (The Physics)
+How it Works :
 Initialization: The camera launches a grid of virtual photons (light rays) towards the black hole at speed c.
 Ray Tracing (Euler Integration): At each time step, the angular momentum of each ray is calculated. The gravitational acceleration is derived and applied to the velocity vectors, bending the light around the singularity.
 Accretion Disk Intersection: If a ray's trajectory passes through the thin plane of the accretion disk (3R s<r<10Rs), it accumulates intensity.
 Relativistic Doppler Effect: The Keplerian orbital velocity of the disk is calculated. Light moving towards the camera is blueshifted (brighter), and light moving away is redshifted (dimmer).
 
 Roadmap / Future Improvements
+
 While the current engine is fast and visually accurate, future iterations could include:
-[ ] Runge-Kutta 4 (RK4) Integration: Replacing the current Euler method for higher long-term orbital stability.
-[ ] Kerr Metric: Implementing a rotating black hole model instead of the static Schwarzschild metric.
-[ ] Color Mapping: Translating the raw intensity data into specific temperature-based color spectrums (blackbody radiation).
+- Runge-Kutta 4 (RK4) Integration: Replacing the current Euler method for higher long-term orbital stability.
+- Kerr Metric: Implementing a rotating black hole model instead of the static Schwarzschild metric.
+- Color Mapping: Translating the raw intensity data into specific temperature-based color spectrums (blackbody radiation).
